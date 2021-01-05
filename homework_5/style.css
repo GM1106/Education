@@ -1,0 +1,51 @@
+body {
+    background-color: #121116;
+    color: #fffff
+    
+}
+
+.header {
+    text-align: center;
+    background-color: #121116;
+    color: #ffffff;
+}
+
+
+.banner {
+    margin: 120px 0px 56px 0px;
+}
+
+
+.banner_title{
+    font-size: 18px;
+    margin: 0px 0px 23px 0px;
+    word-spacing: 3px;
+}
+
+
+.banner_line {
+    width: 230px;
+}
+
+
+.banner_section {
+    padding: 19px 15px 0px 15px;
+    display: inline-block;
+}
+
+
+.footer {
+    margin: 89px 0px;
+}
+
+
+.footer_heading {
+    font-size: 16px;
+    word-spacing: 3px;
+}
+
+
+.footer_color_text {
+    color: #00c7fc;
+}
+
