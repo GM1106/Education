@@ -1,0 +1,140 @@
+body {
+    background: url(./img/grid.png); 
+    font-family: 'Open Sans', sans-serif;  
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+}
+
+
+.container-images {
+    display: flex;
+    margin-top: 65px;    
+}
+
+
+.maim_header {
+    font-size: 40px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 60px 0px 10px 0px;    
+}
+
+
+
+.line {
+    position: relative; 
+    width: 80px;
+    size: 25px;
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+
+
+.info {
+    width: 650px;
+    text-align: center;
+    line-height: 25px;
+   font-size: 15px;
+   opacity: 0.7;
+   position: relative;
+   display: block; 
+}
+
+
+
+.image_Josh {
+    width: 265px;
+    height: 269px;
+}
+
+
+
+.image {
+    margin: 0px 22px;
+    position: relative;
+}
+
+
+
+.image-block {
+    position: relative;
+    padding: 0px 15px ;
+}
+
+
+
+.header_two {
+    position:absolute;
+    text-transform: capitalize;
+    font-size: 22px;   
+}
+
+
+
+.header_three {
+    position: absolute;
+    margin-top: 45px;
+    font-size: 11px;
+    opacity: 0.6;  
+    text-transform: capitalize;   
+}
+
+
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 265px;
+    height: 269px;
+    display: none;
+    margin-left: 40px;  
+    background-color: #2ca8c6;    
+}
+
+
+
+.image_mask {
+    display: block;
+    padding-left: 65px;
+    padding-top: 95px;
+}
+
+
+
+.icon {
+
+    display: inline-block;
+    background-color: #5ecbe7;
+    padding: 10px;
+    width: 17px;
+    height: 25px;
+}
+
+
+
+.image-block:hover .mask {
+    display: block;    
+}
+
+
+.image-block:hover .foto {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
