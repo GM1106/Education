@@ -1,0 +1,180 @@
+
+@font-face {
+    font-family: 'Proxima Nova Condensed Black';
+    src: url('./fonts/Proxima\ Nova\ Condensed\ Light.otf');
+    font-family: Proxima Nova Condensed Light Italic;
+    src: url('./fonts/Proxima\ Nova\ Condensed\ Light\ Italic.otf');
+    font-family: Proxima Nova Condensed Regular Italic;
+    src: url('./fonts/Proxima\ Nova\ Condensed\ Regular\ Italic.otf');
+}
+
+
+
+.container {
+    background-color: #464f54;
+    padding: 90px 40px;
+    width: 600px;
+    height: 400px;
+    margin-left: 450px; 
+}
+
+
+
+.main_box {
+    background-color: whitesmoke;
+    width: 500px;
+    height: 340px;
+    display: block;
+    padding: 130px 50px 20px 30px;
+    margin-bottom: 0px;
+}
+
+
+
+.main_box::after {
+    content: "";
+    border-left: 1px solid #8f8f8f;    
+    padding: 455px 0px 0px 0px;
+}
+
+
+
+
+.main_box_header_first {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color:  #8f8f8f;
+    margin: 0px;
+    margin-left: 20px;
+    font-family: Proxima Nova Condensed Light;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+
+
+.main_box_header_second {
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    margin: 20px 0px 10px 0px;
+    margin-left: 20px;
+    font-family: Proxima Nova Condensed Light;    
+}
+
+
+
+.main_box_header_third {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #8f8f8f;
+    margin-left: 20px;
+    font-family: Proxima Nova Condensed Light Italic;
+}
+
+
+.main_box_text {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: Proxima Nova Condensed Light Italic;
+}
+
+
+
+
+.main_box_text_changes{
+    font-family: Proxima Nova Condensed Regular Italic;
+}
+
+
+
+.box_botton_container {
+padding-top: 300px;
+}
+
+
+
+
+.box_botton {
+    background-color: #fabf2d;
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    margin: -440px 0px 0px 240px;    
+}
+
+
+
+.box_botton_picture {
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+}
+
+
+
+
+.box_botton_container {
+margin: 0px;
+padding: 0px;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+
+
+.box_top {
+    background-color: #181818;
+    width: 430px;
+    height: 50px;
+    position: absolute;
+    margin: -520px 0px 0px 170px;
+    color: aliceblue;  
+    padding: 20px;
+    font-size: 10px;
+}
+
+
+
+.box_top_header_first {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: #8f8f8f;
+    margin: 0px 0px 0px 5px;
+    font-family: Proxima Nova Condensed Light;
+    opacity: 0.7;
+    font-size: 8px;
+}
+
+
+
+
+.box_top_header_second {
+    text-transform: capitalize;
+    font-size: 25px;
+    border-bottom: 2px solid  darkgrey;
+    padding-bottom: 7px;
+    font-family: Proxima Nova Condensed Light;
+    margin: 5px;
+}
+
+
+
+
+
+.box_top_header_second::after{
+    content: "";
+    border-left: 1px solid ;
+    border-color: rgba(170,170,170,0.5);  
+    margin-left: 5px;   
+}
+
+
+
