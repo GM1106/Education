@@ -1,0 +1,157 @@
+body {
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    background-color: black;
+    color: white;  
+    font-size: 12px;    
+}
+
+
+.baner {
+    width: 1000px;
+    height: 650px;
+    margin: 50px 50px 50px 180px;
+    padding-left: 150px;
+   display: block;
+   background-color: #3399CC;
+   border: 20px solid #2B81AC;
+}
+
+
+.baner_heading {
+    padding-top: 30px;
+    width: 1000px;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+
+.container {    
+    width: 800px;
+    list-style: none;
+    position: absolute;
+    font-size: 0px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    opacity: 1;
+} 
+
+
+ul:hover :not(:hover) {
+    opacity: 0.5;
+}
+
+
+
+
+.box {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    border: 3px solid white;
+    background-color: sandybrown;
+    font-size: 16px;
+    height: 110px; 
+}
+
+
+
+.box_city{
+    font-weight: normal;
+}
+
+
+.box_temperature {
+    color: rgba(255,255,255,0.4)
+}
+
+
+.box1{
+    width: 48.8%;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    background-color: #3399CC;   
+}
+
+
+
+.box2 {
+     width: 24%;
+     border-top: 5px solid white;
+     background-color: #33CCCC;   
+ }
+
+
+
+.box3 {
+    width: 24%;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    background-color: #996699;
+}
+
+
+
+.box4 {
+    border-left:  5px solid white;
+    background-color: #C24747;
+}
+
+
+
+.box5{
+    background-color: #E2674A;
+}
+
+
+
+.box6{
+    background-color: #FFCC66;
+}
+
+
+.box7 {
+    border-right:  5px solid white;
+    background-color: #99CC99;
+}
+
+
+
+.box8 {
+    border-left:  5px solid white;
+    width: 24%;
+    background-color: #669999;
+}
+
+
+
+.box9 {
+    width: 48.8%; 
+    background-color: #CC6699;
+}
+
+
+
+.box10 {
+    border-right:  5px solid white;
+    width: 24%;
+    background-color: #339966;
+}
+
+
+ .box11 {
+    width: 98.3%;
+    border-bottom: 5px solid white; 
+    border-left:  5px solid white;
+    border-right:  5px solid white;
+    background-color: #666699;
+}
+
+
+.footer{
+    display: block;
+    position: absolute;
+    margin: 485px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: normal;
+}
