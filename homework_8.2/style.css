@@ -1,0 +1,157 @@
+
+body {
+    background-color: #e2e7ec;
+    text-align: center;
+    word-spacing: 2px;    
+}
+
+
+.container {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 50px 150px 50px 350px;
+    width: 680px;
+}
+
+
+.box_large {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    margin: 0px 10px 10px 0px;   
+    width: 450px;
+    height: 325px;
+    background: url(./img/Layer_8.jpg) no-repeat;
+    background-size: 100%;
+    box-shadow: inset -30px -30px 150px 30px black 
+}
+
+
+.box_large_header_one {
+    margin: 240px 0px 10px 20px;
+    color: #a3a3a3; 
+    font-weight: normal;
+    font-size: 10px;   
+}
+
+
+.box_large_header_second {
+    color: ghostwhite;
+    margin: 0px 0px 20px 20px;
+    font-size: 10px;
+    text-align: left;
+    width: 230px;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+
+.boxes {
+    flex-basis: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    flex-grow: 0;
+    background-color: azure;
+}
+
+
+.box_indent {
+    margin-right: 10px;
+}
+
+
+
+.boxes_pictures {
+    width: 220px;  
+}
+
+
+.boxes_avatar{
+    margin: 0px 0px 10px 20px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.boxes_pictures_change_height {
+    height: 155px;
+}
+
+
+
+.boxes_date {
+    margin: 10px 0px 20px 20px;
+    font-size: 8px;
+    color: #a3a3a3;    
+}
+
+
+
+.boxes_header {
+    margin: 0px 0px 50px 20px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    width: 180px;
+    font-weight: bold;
+}
+
+
+
+.box_four_header {
+    margin: 35px 0px 50px 20px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    width: 180px;
+    font-weight: bold;
+}
+
+
+
+.foter_symbol {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.foter_text {
+    font-size: 15px;
+    color: #a3a3a3;  
+    padding: 0px 0px 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
