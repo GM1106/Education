@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="body">
+    <div class="card body_card">
+        <div class="product card_product">
+            <div class="product_logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="product_images">
+                <img src="./img/nike.png" alt="sneaker">
+                <div class="product__button button">
+                    <ul class="button_list">
+                        <li>
+                            <button class="button_list-elem button_list-elem_yellow" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="button_list-elem button_list-elem_white" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="button_list-elem button_list-elem_red" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="button_list-elem button_list-elem_blue" type="button"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info info_product">
+            <div class="info__about">
+                <span class="info__model">
+                    Nike SB Stefan
+                </span>
+                <span class="info__model">
+                    Janoski Max
+                </span>
+                <span class="info__tipe">
+                    unisex skateboarding shoe
+                </span>
+
+                <ul class="info__rating rating">
+                    <li class="rating__star">&#9733</li>
+                    <li class="rating__star">&#9733</li>
+                    <li class="rating__star rating__star_active">&#9733</li>
+                    <li class="rating__star">&#9733</li>
+                    <li class="rating__star">&#9733</li>
+                </ul>
+                <form class="info_form form">
+                    <div class=" form-input">
+                        <select name="Size" id="Size" class="form__input form__input-select" c>
+                            <option value="" disabled="disabled" selected="selected" hidden>size</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="38">39</option>
+                            <option value="38">40</option>
+                            <option value="38">41</option>
+                        </select>
+
+                        <select name="Qty" id="Qty" class="form__input form__input-select">
+                            <option value="" disabled="disabled" selected="selected" hidden>qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-button">
+                        <button class="form-button-submit" type="submit"> Add to cart</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
