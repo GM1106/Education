@@ -1,0 +1,171 @@
+body {
+    height: 1500px;
+    width: 1100px;
+    padding-left: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+  
+.body_card{
+    height: 600px;  
+    background: url(./img/2.png) no-repeat ;  
+    background-color: #f9f8fb;
+    background-position: 110% 20%;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 0;  
+}
+
+
+.card__logo {
+    margin-right: 170px;
+}
+
+
+.card_image {
+    width: 100px;
+    padding-left: 40px;
+}
+
+
+
+.card__navigator {
+    flex-grow: 1;
+}
+
+
+.navigator {
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.navigator__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 10px 50px 0px 100px;
+    padding: 0;
+}
+
+
+.navigator__list-elem {
+    cursor: pointer;
+}
+
+
+.navigator__list-elem:hover {
+    border-top: 2px solid red;
+}
+
+
+.navigator__list-elem_active {
+    border-top: 2px solid red;
+}
+
+
+.card__main{
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-left: 100px;  
+}
+
+
+.main_heading {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.main_text {
+   color: black;
+   text-align: justify;
+   font-family: 'Josefin Slab', serif;
+}
+
+
+.main_button {
+   background-color: #ff6033;
+   color: white;
+   border: none;
+   width: 120px;
+   padding: 9px 0px;
+   margin-top: 10px;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: normal;
+}
+
+.button button {
+    background: url(./img/scroll.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 500px;
+    margin-top: 70px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.body_footer {
+   background-color: #00b2b2;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+}
+
+
+.footer_image {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer_image img {
+    width: 400px;
+    height: 400px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+
+.footer_content {
+    margin: 70px 100px 0px 100px;
+    width: 400px;
+}
+
+
+.footer_content h2  {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Anton', sans-serif;
+    margin: 0px;
+}
+
+
+.footer_content p{
+    color: white; 
+    font-weight: normal;
+    font-family: 'Josefin Slab', serif;
+}
+
