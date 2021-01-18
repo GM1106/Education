@@ -1,0 +1,166 @@
+.body__form {
+    margin: 0 auto ;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.form {
+   background: url(./img/1.png) no-repeat;
+   background-size: cover;
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 10px 24px -4px black;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+    padding: 30px 0px;
+}
+
+
+.tabs__link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.tabs__link--active {
+    border-bottom: 2px red solid;
+    color: rgba(255, 255, 255);
+}
+
+
+.sign_in {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 250px;
+}
+
+
+.inputs__error {
+    color: brown;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.inputs input:invalid+.inputs__error {
+    visibility: visible;
+}
+
+.inputs label {
+    text-transform: capitalize;
+    color: #ffffff;
+    letter-spacing: 1px; 
+    margin-bottom: 5px;
+}
+
+.inputs input{
+    height: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: white;
+    margin: 7px 0 0;
+    padding: 10px;    
+}
+
+.sign_in__inputs-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+
+[type=checkbox] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+
+[type=checkbox]:checked+.sign_in__inputs-checkbox .sign_in__inputs-form {
+    font-size: 15px;
+}
+
+.sign_in__inputs-form {
+    width: 19px;
+    height: 19px;
+    background-color: #23ae92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    margin: 20px 10px 20px 0px;
+}
+
+
+.sign_in__inputs-info{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+
+
+.sign_in button{
+    background-color: #23ae92;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    width: 280px;
+    margin-left: 60px;
+    color: white;
+    padding: 8px; 
+    font-size: 18px;
+    letter-spacing: 2px; 
+    margin-bottom: 20px;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navigator li {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.navigator a{
+    color: white;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    font-size: 10px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid white;
+}
+
+
+.ADDRESS_123_City_name__Street__City__Country_EM {
+    font-size: 17px;
+    font-family: "Raleway";
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    line-height: 1.471;
+    position: absolute;
+    left: 834.844px;
+    top: 323.709px;
+    width: 317px;
+    height: 160px;
+    z-index: 29;
+  }
+  
