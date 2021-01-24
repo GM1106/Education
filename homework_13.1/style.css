@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;    
+}
+
+
+.baner{
+    background: url(./img/1.png) no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside {
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+
+.aside button{
+    border: none;
+    padding: 0px;
+}
+
+
+.aside_list {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   box-shadow: 0 0 10px 1px rgba(157, 157, 157, 1);
+   background-color: #ffffff;
+   font-family: "Raleway";
+   margin: 0px;
+   padding: 0px;
+}
+
+
+
+.aside_item_1 {
+    width: 200px;
+    height: 80px;
+    border-right: rgba(157, 157, 157, 1) solid 1px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 15px; 
+}
+
+
+.aside_item_2 {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+ 
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+
+.header h2{
+    text-transform: capitalize;
+    font-size: 65px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+
