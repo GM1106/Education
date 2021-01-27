@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+    <div class="form body__form">
+        <ul class="form__tabs tabs">
+            <li>
+                <a href="#" class="tabs__link tabs__link--active">Sign in</a>
+            </li>
+            <li>
+                <a href="#" class="tabs__link">Join us</a>
+            </li>
+        </ul>
+
+        <form class="form__sign_in sign_in" action="#" method="GET">
+            <div class="sign_in__inputs inputs">
+                <label for="usernameID">username</label>
+                <input type="text" id="usernameID" name="usernameName" required minlength="5">
+                <span class="inputs__error">Error</span>
+            </div>
+
+            <div class="sign_in__inputs inputs">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="inputs__error">Error</span>
+            </div>
+
+            <div class="sign_in__inputs inputs ">
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+                <label for="checkbox" class="sign_in__inputs-checkbox"><span
+                        class="sign_in__inputs-form">&#10004;</span>
+                    <a class="sign_in__inputs-info"> Keep me signed in </a></label>
+            </div>
+
+            <input type="hidden" name="csrf_tokken" value="sign">
+
+            <button type="submit">Sign in</button>
+        </form>
+
+        <ul class="navigator form_navigator">
+            <li>
+                <a href="#">Forgot password</a>
+            </li>
+            <li>
+                <a href="#">Create an account</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+
+body{
+    background-color: #282828;
+}
+
+
+.body_card{
+    width: 900px;
+    height: 600px;  
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;  
+}
+
+
+.content {
+    background: url(./img/img.png) no-repeat center;
+    background-size: 100%;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header h2{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif; 
+    margin: 50px 0px 10px;
+    letter-spacing: 1px;
+}
+
+
+.header span {
+    width: 300px;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0px;  
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.form__input {
+    background-color: #75d8d7;
+    margin: 0px 0px 10px 100px;
+    padding: 7px 0px 7px 20px;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 15px;  
+    font-weight: normal;  
+}
+
+
+input::placeholder  {
+    color: white;
+}
+
+
+textarea::placeholder  {
+    color: white;
+}
+
+
+.form__input:hover{
+    border-left: 4px solid #355b82;
+    background-color: #00c4c4;
+    font-weight: bolder;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 12px 70px;
+}
+
+
+.text h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+.text span {
+    font-size: 10px;
+    margin: 0px;
+}
+
+.info_text-phone{
+    display: inline-block;
+    font-family: 'Princess Sofia', cursive;
+   
+}
+
+.info_text-phone a{
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+
+.footer{
+    background-color: #262626;
+    width: 900px;
+    height: 50px;
+    display: flex;
+    color: #7e7e7e;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.footer a{
+    color: #d42a4e;
+}
+
+
+.footer-img {
+    width: 60px;
+    height: 20px;
+}
