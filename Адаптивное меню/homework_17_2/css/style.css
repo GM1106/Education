@@ -1,0 +1,119 @@
+body {
+  background: #939397;
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+}
+
+.wrapper {
+  background: #939397;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  background: #8383c7;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+.menu__item {
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.burger-block__btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 280px) {
+  .menu {
+    opacity: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  .menu__item {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: -1px -1px 2px 0 #b0bcb9;
+  }
+  .menu__item :hover {
+    background-color: #7991db;
+    color: #44234b;
+    font-size: 25px;
+    padding: 5px 0px;
+    margin: 5px 0px;
+  }
+  .menu__link {
+    display: block;
+    color: #beb8b4;
+  }
+
+  .burger-block {
+    width: 40px;
+    height: 40px;
+  }
+  .burger-block__img {
+    position: relative;
+    top: 50%;
+    right: -8%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    transition: all 0.17s;
+    z-index: 3;
+  }
+  .burger-block__img:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+  .burger-block__img:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+
+  .burger-block__btn:checked ~ .menu {
+    opacity: 1;
+    top: 62px;
+    background: #313153;
+  }
+
+  .burger-block__btn:checked ~ .burger-block__img {
+    right: -5%;
+    transform: rotate(45deg);
+  }
+
+  .burger-block__btn:checked ~ .burger-block__img:before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .burger-block__btn:checked ~ .burger-block__img:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+}
