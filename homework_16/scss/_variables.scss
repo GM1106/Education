@@ -1,0 +1,10 @@
+$font-text: 'Lato-Regular';
+$font-size-text: 17px;
+$font-title: 'Raleway';
+$background-gallery: #ffe92f;
+$font-button: 'Lato-Regular';
+$background-btn: #5585a2;
+$percent: 15%;
+$gradualChange: 0.35s;
+$property: "";
+$lightenBackgroundBTn: lighten($background-btn, $percent);

@@ -1,0 +1,9 @@
+@function gradualChange($property, $gradualChange) {
+    @return($property, $gradualChange);    
+}
+
+@function gradualPositBtn($translateX, $translateY) {
+    @return($translateX*5, $translateY*3);  
+}
+
+
