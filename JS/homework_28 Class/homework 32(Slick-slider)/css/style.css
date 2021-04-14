@@ -22,8 +22,8 @@ body{
 
 
 .slider-img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
     border: 1px solid; outline: 2px solid; margin: 2px;
     padding: 10px;
