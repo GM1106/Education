@@ -1,0 +1,147 @@
+// import других файлов стилей
+
+@import "normalise.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "function.scss";
+
+
+
+.container {
+    width: 90%;
+    @media screen and (max-width: 1200px){
+        width: 70%;
+   }
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.gallery {
+    background-color: $background-gallery;
+}
+
+.gallery-card {
+    &__btn {
+        @include btnStyle ; 
+        width: 20%;
+        max-width: 200px;
+        margin: 20px auto 160px;
+        background: $background-btn;
+        font-size: 15px;
+        @media screen and (max-width: 1400px){
+             font-size: 13px;
+        }
+         @media screen and (max-width: 1200px){
+             font-size: 11px;
+        }
+        @media screen and (max-width: 992px){
+            font-size: 10px;
+        }
+         @media screen and (max-width: 768px){
+            font-size: 9px;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 8px;
+        }
+        transition: gradualChange(all, 0.5s);
+        &:hover{
+             background: $lightenBackgroundBTn;
+             transform: translate(gradualPositBtn(10px, 4px));
+        }
+    }
+    
+}
+.gallery-info {
+    text-align: center;
+    &__title {
+        @include titleBlock(black);
+        font-size: 90px;
+        @media screen and (max-width: 1400px){
+             font-size: 80px;
+        }
+         @media screen and (max-width: 1200px){
+             font-size: 70px;
+        }
+        @media screen and (max-width: 992px){
+            font-size: 60px;
+        }
+         @media screen and (max-width: 768px){
+            font-size: 50px;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 40px;
+        }
+        transition: gradualChange(all, 0.5s);
+        &:hover {
+            transform: translate(gradualPositBtn(10px, 0px));
+        }
+    }
+
+    &__text {
+        width: 55%;
+        margin: 0 auto;
+        min-width: 300px;
+        text-align: center;
+        font-family: $font-text;
+        font-size: 25px;
+         @media screen and (max-width: 1400px){
+             font-size: 20px;
+        }
+         @media screen and (max-width: 1200px){
+             font-size: 18px;
+        }
+        @media screen and (max-width: 992px){
+            font-size: 15px;
+        }
+         @media screen and (max-width: 768px){
+            font-size: 12px;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 10px;
+        }
+    }
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    &-row {
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+        } 
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+    &__img-picture{
+        width: 100%;
+        @media screen and (max-width: 768px){
+            width: 70%;
+        }
+    
+        @media screen and (max-width: 576px){
+            width: 60%;            
+        }
+    }
+}
+
+.gallery-card-row--col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 0px 8px;
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }  
+}
+
+
+
+

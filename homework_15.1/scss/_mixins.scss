@@ -1,0 +1,19 @@
+@mixin titleBlock($color) {
+    font-family: $font-title;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 20px 0; 
+    color: $color;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin btnStyle(){
+    font-family: $font-button;
+    color: white;
+    text-transform: uppercase;;
+    box-shadow: 0 0 10px 2px rgb(29, 29, 29);
+    border: none; 
+    letter-spacing: 1px;
+    padding: 10px 0px;
+}

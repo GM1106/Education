@@ -1,0 +1,442 @@
+@import "normalise.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+body{
+    font-family: $font-text, $font-text-2, sans-serif;
+}
+
+
+.section1 {  
+    background: url(../img/header.png) no-repeat;
+    background-size: $image-size;
+    @include position; 
+      &_logo{
+        margin: 150px auto 50px;
+        &-png{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        } 
+      }
+      &_header{
+        @include position;
+        &-text{
+            color: $text-color;
+            text-transform: $text_register;  
+            letter-spacing: 10px; 
+            margin: 0 auto;
+            font-size: 30px; 
+            text-align: $text-position;
+            @media screen and (max-width: 768px) {
+                font-size: 20px; 
+             }
+             @media screen and (max-width: 576px) {
+                font-size: 15px; 
+             }  
+        } 
+      }
+      &_info{
+        @include position; 
+        color: $text-color;
+        text-transform: $text_register;
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin: 40px auto 50px;
+        text-align: $text-position;   
+        &-text{
+            margin-bottom: 5px;
+            text-align: $text-position;
+            @media screen and (max-width: 768px) {
+                font-size: 10px; 
+             }
+             @media screen and (max-width: 576px) {
+                font-size: 8px; 
+             }  
+        }
+      }
+      &_button{
+          &-svg{
+            @include position; 
+            @include button_style;
+            background: none;
+            padding-top: 20px;
+            margin-bottom: 30px;
+          }
+      }
+}
+
+.section2{
+    @include small_section;
+    &_border{
+        @include border;
+        border-color: black;
+    }
+    &_border-name{
+        @include bordername;
+        @media screen and (max-width: 768px) {
+           font-size: 20px; 
+        }
+        @media screen and (max-width: 576px) {
+           font-size: 10px; 
+        }
+    }
+    &_header{
+        @include position_section2;
+        margin: 30px auto 30px;
+        font-size: $text-size;
+        letter-spacing: $text-spacing;
+        padding-bottom: 10px;
+        text-align: $text-position;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        } 
+    }
+    &_text{
+        @include position_section2;
+        font-size: $text-size;
+       letter-spacing: $text-spacing;
+        padding-bottom: 3px;
+        text-align: $text-position;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        }
+    }
+}
+
+.section3 {
+    background: url(../img/services.png) no-repeat;
+    background-size:$image-size;
+    @include position; 
+    &_border{
+        @include border;
+        border-color: $text-color;
+    }
+    &_border-name {
+        @include bordername;
+        color: $text-color;
+        @media screen and (max-width: 768px) {
+            font-size: 20px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 10px; 
+        }
+    }
+    &_box {
+        margin: 40px auto;
+    }
+    &_text{
+        color: $text-color;
+        font-size: $text-size;
+        margin-bottom: 5px; 
+        text-align: $text-position;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        }  
+    }
+}
+
+
+.section4{
+    @include small_section;
+    &_border{
+        @include border;
+    }
+    &_border-name{
+        @include bordername;
+        @media screen and (max-width: 768px) {
+            font-size: 20px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 10px; 
+        }
+    }
+    &_box{
+        @include position;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        &-logo{
+            width: 60px;
+            @media screen and (max-width: 768px) {
+                width: 50px; 
+            }
+            @media screen and (max-width: 576px) {
+                width: 40px;
+            }
+            height: 60px;
+            @media screen and (max-width: 768px) {
+                height: 50px; 
+            }
+            @media screen and (max-width: 576px) {
+                height: 40px;
+            }
+        }
+        &-header{
+            text-transform: $text_register;
+            letter-spacing: 4px; 
+            text-align: $text-position;
+            @media screen and (max-width: 768px) {
+                font-size: 15px; 
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 12px; 
+            }
+        }
+        &-text{
+            text-align: $text-position;
+            font-size: $text-size;
+            padding-bottom: 4px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px; 
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 9px; 
+            }
+            
+        }
+    }
+}
+
+
+.section5{
+    @include bFlex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 1400px) {
+        @include bFlex;
+        justify-content: space-around;
+        padding: 0px 190px;
+    }
+    @media screen and (max-width: 1200px) {
+        @include bFlex;
+        justify-content: space-around;
+        padding: 0px 94px;
+    }
+    @media screen and (max-width: 768px) {
+        @include bFlex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5px;
+        padding: 0px 5px;
+    }
+    
+        
+    &_button{
+        height: 175px;
+        @media screen and (max-width: 1400px) {
+            margin: 0;
+        }
+    }
+   
+    &_button-1{
+        background: url(../img/Layer1.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+            width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-2{
+        background: url(../img/Layer2.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+              width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-3{
+        background: url(../img/Layer3.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+            width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-4{
+        background: url(../img/Layer4.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+            width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-5{
+        background: url(../img/Layer5.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+            width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-6{
+        background: url(../img/Layer6.png) no-repeat;
+        background-size: $image-size; 
+        @include button;
+        @media screen and (max-width: 992px) {
+            width: 390px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 370px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 273px;
+        }
+    }
+    &_button-text{
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        text-transform: $text_register;
+        color: $text-color;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        font-size: 15px;
+    } 
+
+}
+
+.section6{
+    @include small_section;
+    @include position;
+    &_border{
+        @include border;
+        padding-top: 40px;
+    }
+    &_border-name{
+        @include bordername;
+        @media screen and (max-width: 768px) {
+            font-size: 20px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 10px; 
+        }
+    }
+    &_text{
+        font-size: $text-size;
+        letter-spacing: $text-spacing;
+        margin-bottom: 5px;
+        text-align: $text-position;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        }     
+    }
+    &_input{
+        @include button_style;
+        height: 40px;
+        margin: 30px 0px 40px;
+        background-color: #3c3c3c;
+        box-shadow: 0 0 2px 1px rgb(29, 29, 29);
+        padding: 0px 30px;
+        @media screen and (max-width: 768px) {
+            padding: 0px 20px; 
+        }
+        @media screen and (max-width: 576px) {
+            padding: 0px 10px;  
+        }
+    }
+    & [value]{
+        color: $text-color;
+        text-transform: $text_register;
+        letter-spacing: 2px;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        }
+    }
+}
+
+
+.footer{
+    @include bFlex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    max-width: 320px;
+    margin-bottom: 50px;
+    
+    &_image{
+       height: 40px;
+       margin-right: 10px;
+    @media screen and (max-width: 768px) {
+        height: 30px; 
+    }
+    @media screen and (max-width: 576px) {
+        height: 25px;
+    }  
+    }
+    &_text{
+        margin-top: 15px;
+        @media screen and (max-width: 768px) {
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 576px) {
+            margin-top: 5px; 
+        }
+        
+        font-size: $text-size;
+        @media screen and (max-width: 768px) {
+            font-size: 10px; 
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 9px; 
+        }
+    }
+}
+
+
+
+
+
+

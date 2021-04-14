@@ -1,0 +1,67 @@
+@mixin border {
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 50px;
+    width: 70%;
+    max-width: 600px;
+    border: 2px solid;   
+}
+
+
+@mixin bordername{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@mixin position {
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox; 
+  flex-direction: column; 
+}
+
+@mixin position_section2 {
+    width: 70%;
+    max-width: 440px;
+    text-align: center;    
+}
+
+@mixin small_section {
+    width: 60%;
+    max-width: 900px;
+    background-color: #ffffff;
+}
+
+@mixin button{
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox; 
+    width: 495px;
+    height: 165px;
+    border: none; 
+    position: relative;   
+    margin-bottom: 10px;
+}
+
+@mixin button_style {  
+    cursor: poiiter;
+    border: none;
+    outline: none;
+}
+
+@mixin bFlex {
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;     
+}
