@@ -181,7 +181,7 @@ body{
     height: 10vh;
     padding: 0 calc(50% - 550px);
     @media only screen and (max-width: 1000px){
-        background: linear-gradient( hsl(229, 54%, 46%), #403c3a);
+        background: linear-gradient( hsl(118, 86%, 16%), #403c3a);
     }
     &_logo{
         @include logo;
